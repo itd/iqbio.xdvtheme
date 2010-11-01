@@ -19,7 +19,9 @@ iqbio_public.css.dtml
 * :link,:visited { text-decoration:none }
 * ul,ol { list-style:none; }
 * li { display: inline; }
+/*
 * h1,h2,h3,h4,h5,h6,pre,code { font-size:1em; }
+*/
 * a img,:link img,:visited img { border:none }
 a { outline: none; }
 table { border-spacing: 0; }
@@ -850,7 +852,7 @@ dl.error dd {
 }
 
 /* Shared CSS between the two tab types */
-#edit-bar,
+
 #content ul.formTabs {
     display: block;
     border-style: solid solid none solid;
@@ -862,6 +864,21 @@ dl.error dd {
     -moz-border-radius-topleft: 0.5em;
     -moz-border-radius-topright: 0.5em;
 }
+
+
+/* Shared CSS between the two tab types */
+#edit-bar {
+    display: block;
+    border-style: solid solid none solid;
+    margin-left: 0;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    -webkit-border-top-right-radius: 0.5em;
+    -webkit-border-top-left-radius: 0.5em;
+    -moz-border-radius-topleft: 0.5em;
+    -moz-border-radius-topright: 0.5em;
+}
+
 #content li.formTab {
     display: inline;
     margin-right:0.25em;

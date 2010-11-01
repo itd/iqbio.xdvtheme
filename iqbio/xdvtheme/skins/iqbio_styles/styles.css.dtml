@@ -402,6 +402,7 @@ h3#eventsheader {
 h2, .documentFirstHeading {
 	font-weight:normal;
 	font-size:24px;
+	line-height: 1.25em;
 }
 
 .alignleft {
@@ -432,6 +433,13 @@ color: #363636;
 font-size: 180%;
 font-weight: bold;
 }
+
+/* ######################################################  */
+/*horrible hack to hide the plone.contentviews div*/
+.section-surveys #edit-bar {
+  display: none;
+}
+
 
 /* </dtml-with> */
 

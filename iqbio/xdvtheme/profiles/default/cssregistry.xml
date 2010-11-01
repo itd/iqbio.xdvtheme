@@ -43,6 +43,7 @@
      expression="not:request/HTTP_X_XDV | nothing"
      id="base.css"
      />
+
  <!-- Add new stylesheets -->
  <!-- Note: applyPrefix is not available in Plone < 4.0b3 -->
 
