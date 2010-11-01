@@ -15,6 +15,8 @@
     <value>
       <element>iqbiology.colorado.edu</element>
       <element>iqbio.tool.net</element>
+      <element>cimb.tool.net/iqbio/survey</element>
+      <element>iqbiology.colorado.edu/survey</element>
     </value>
   </record>
   <record field="enabled"

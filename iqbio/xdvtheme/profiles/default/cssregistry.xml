@@ -53,13 +53,14 @@
     conditionalcomment=""
     cookable="True"
     enabled="on"
-    expression="request/HTTP_X_XDV | nothing"
     id="iqbio_public.css"
     media="screen"
     rel="stylesheet"
     rendering="link"
     applyPrefix="True"
     />
+<!--     expression="request/HTTP_X_XDV | nothing"
+ -->
 
  <stylesheet title="styles.css"
     authenticated="False"
@@ -68,14 +69,14 @@
     conditionalcomment=""
     cookable="True"
     enabled="on"
-    expression="request/HTTP_X_XDV | nothing"
     id="styles.css"
     media="screen"
     rel="stylesheet"
     rendering="link"
     applyPrefix="True"
     />
-
+<!--     expression="request/HTTP_X_XDV | nothing"
+ -->
 <!--
  <stylesheet title="" authenticated="False" cacheable="True"
     compression="safe" conditionalcomment="" cookable="True" enabled="on"
