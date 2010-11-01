@@ -1,0 +1,22 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="iqbio.xdvtheme">
+
+  <genericsetup:registerProfile
+      name="default"
+      title="IQBIO_XDVTHEME"
+      directory="profiles/default"
+      description='Extension profile for the "IQBIO_XDVTHEME" Plone theme.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:importStep
+      name="iqbio.xdvtheme.various"
+      title="IQBIO_XDVTHEME: miscellaneous import steps"
+      description="Various import steps that are not handled by GS import/export handlers."
+      handler="iqbio.xdvtheme.setuphandlers.setupVarious">
+    <depends name="skins"/>
+  </genericsetup:importStep>
+
+</configure>

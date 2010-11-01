@@ -1,0 +1,31 @@
+<div id="portal-searchbox"
+     i18n:domain="plone"
+     tal:define="navigation_root_url view/navigation_root_url;
+                 search_input_id view/search_input_id;">
+    <form name="searchform"
+          action="search"
+          tal:attributes="action string:${navigation_root_url}/search">
+
+        <div id="inputwrapper">
+        <input name="SearchableText"
+                type="text"
+                value="Search CU-Boulder"
+                title="Search CU-Boulder"
+                onfocus="this.value='';"
+                accesskey="4"
+                i18n:attributes="title title_search_site;"
+                tal:attributes="value request/form/SearchableText|nothing;
+                               id search_input_id"
+               class="text" />
+
+        <input tal:attributes="src string:${navigation_root_url}/submit.png"
+                class="searchButton"
+                type="image"
+                value="Search"
+                i18n:attributes="value label_search;" />
+
+        </div>
+
+    </form>
+
+</div>
