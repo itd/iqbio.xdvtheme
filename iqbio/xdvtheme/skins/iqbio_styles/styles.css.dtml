@@ -428,12 +428,12 @@ h2, .documentFirstHeading {
 dl.actionMenu a, dl.actionMenu div {
 color: #363636;
 }
-
+/*
 #fieldsetlegend-0 {
-font-size: 180%;
+font-size: 120%;
 font-weight: bold;
 }
-
+*/
 /* ######################################################  */
 /*horrible hack to hide the plone.contentviews div*/
 .section-surveys #edit-bar {
