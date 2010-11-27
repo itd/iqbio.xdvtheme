@@ -10,7 +10,7 @@
           />
      <javascript
           id="++resource++kukit.js"
-          expression="python:context.portal_membership.getAuthenticatedMember().has_role('Manager') or context.portal_membership.getAuthenticatedMember().has_role('Editor')'"
+          expression="python:context.portal_membership.getAuthenticatedMember().has_role('Manager') or context.portal_membership.getAuthenticatedMember().has_role('Editor')"
           />
 <!--
 expression="python:not context.getParentNode().getPhysicalPath()[-1] == 'surveys' and context.portal_membership.getAuthenticatedMember().has_role('Manager')  or context.portal_membership.getAuthenticatedMember().has_role('Editor')
