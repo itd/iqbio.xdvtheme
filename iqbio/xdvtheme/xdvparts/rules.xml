@@ -22,7 +22,6 @@
         css:if-content="body.section-front-page"/ -->
 
 
-
     <!-- Logo -->
     <prepend content="//*[@id='portal-logo']/attribute::href"
              theme="//*[@id='logo']/a" />
@@ -36,16 +35,24 @@
             theme="//*[@id='container']" />
 
     <!-- Global navigation -->
-    <copy content='//*[@id="portal-globalnav"]/li' theme='//*[@id="navigation"]/ul' />
+    <copy content='//*[@id="portal-globalnav"]/li'
+        theme='//*[@id="navigation"]/ul' />
 
     <!-- Document Content -->
-    <copy content="//*[@id='portal-column-content']/*" theme="//*[@id='content-core']" />
+    <copy content="//*[@id='portal-column-content']/*"
+        theme="//*[@id='content-core']" />
     <append content="//*[contains(concat(' ', normalize-space(@class), ' '), ' managePortletsFallback ')]"
             theme="//*[@id='document-wrapper']" />
 
 
+
+    <!-- portal-column-two content -->
+    <copy content="//*[@id='portal-column-two']/*"
+            theme="//*[@id='sidebar']" />
     <!-- navigation portlet mojo -->
-    <replace content="//*/dl[@class='portlet portletNavigationTree']/dd/ul" theme="//*[@id='subnav-flattop']/ul" />
+    <replace content="//*/dl[@class='portlet portletNavigationTree']/dd/ul"
+            theme="//*[@id='subnav-flattop']/ul" />
+
 
 
     <!-- search gadget stuff -->
