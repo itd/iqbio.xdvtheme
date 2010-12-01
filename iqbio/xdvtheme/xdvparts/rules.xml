@@ -18,7 +18,8 @@
 
 
 
-   <theme href="static/frontpage.html" css:if-content="body.section-front-page"/>
+    <!-- theme href="static/frontpage.html"
+        css:if-content="body.section-front-page"/ -->
 
 
 
@@ -54,9 +55,9 @@
     <!-- Footer -->
     <append content="//*[@id='kss-spinner']" theme="/html/body" />
 
-    <!-- Drop sidebar conditionally -->
+    <!-- Drop sidebar conditionally
     <drop css:theme="#sidebar" if-content="not(//*[@class='navTree navTreeLevel0'])" />
-
+    -->
 
     <!-- Drop unnecessary elements -->
     <drop content="//*[@id='breadcrumbs-you-are-here']" />
