@@ -47,7 +47,7 @@
 
 
     <!-- portal-column-two content -->
-    <copy content="//*[@id='portal-column-two']/*"
+    <append content="//*[@id='portal-column-two']/*"
             theme="//*[@id='sidebar']" />
     <!-- navigation portlet mojo -->
     <replace content="//*/dl[@class='portlet portletNavigationTree']/dd/ul"
