@@ -47,11 +47,15 @@
 
 
     <!-- portal-column-two content -->
+
     <append content="//*[@id='portal-column-two']/*"
             theme="//*[@id='sidebar']" />
     <!-- navigation portlet mojo -->
     <replace content="//*/dl[@class='portlet portletNavigationTree']/dd/ul"
             theme="//*[@id='subnav-flattop']/ul" />
+
+    <drop theme="//*[@id='sidebar']"
+        css:if-content="body.template-submission-status" />
 
 
 
