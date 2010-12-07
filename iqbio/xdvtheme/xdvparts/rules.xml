@@ -5,6 +5,10 @@
     >
     <replace content='/html/head/title' theme='/html/head/title' />
 
+    <replace theme="/html/body"
+        css:if-content="body.printable" />
+
+
     <append  content="/html/head/base"   theme="/html/head" />
     <append  content="/html/head/meta"   theme="/html/head" />
     <append  content='/html/head/style'  theme='/html/head' />
