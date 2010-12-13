@@ -3,6 +3,10 @@
     xmlns="http://namespaces.plone.org/xdv"
     xmlns:css="http://namespaces.plone.org/xdv+css"
     >
+
+    <theme href="printable.html"
+        css:if-content="body.printable"/>
+
     <replace content='/html/head/title' theme='/html/head/title' />
 
     <append  content="/html/head/base"   theme="/html/head" />
@@ -15,12 +19,6 @@
     <prepend content="/html/body/@class" theme="/html/body" />
     <prepend content="/html/body/@id"    theme="/html/body" />
     <prepend content="/html/body/@dir"   theme="/html/body" />
-
-    <replace theme="/html/body"
-        css:if-content=".printable" />
-
-    <!-- theme href="static/frontpage.html"
-        css:if-content="body.section-front-page"/ -->
 
 
     <!-- Logo -->
@@ -45,7 +43,11 @@
     <append content="//*[contains(concat(' ', normalize-space(@class), ' '), ' managePortletsFallback ')]"
             theme="//*[@id='document-wrapper']" />
 
-
+    <!--  should happen only when using the printable view -->
+    <append
+      css:content="body.printable"
+      theme="/html/body"
+      />
 
     <!-- portal-column-two content -->
 
