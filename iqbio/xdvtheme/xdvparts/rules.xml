@@ -5,10 +5,6 @@
     >
     <replace content='/html/head/title' theme='/html/head/title' />
 
-    <replace theme="/html/body"
-        css:if-content="body.printable" />
-
-
     <append  content="/html/head/base"   theme="/html/head" />
     <append  content="/html/head/meta"   theme="/html/head" />
     <append  content='/html/head/style'  theme='/html/head' />
@@ -20,7 +16,8 @@
     <prepend content="/html/body/@id"    theme="/html/body" />
     <prepend content="/html/body/@dir"   theme="/html/body" />
 
-
+    <replace theme="/html/body"
+        css:if-content=".printable" />
 
     <!-- theme href="static/frontpage.html"
         css:if-content="body.section-front-page"/ -->
