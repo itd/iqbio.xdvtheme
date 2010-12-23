@@ -434,10 +434,27 @@ font-size: 120%;
 font-weight: bold;
 }
 */
+
 /* ######################################################  */
 /*horrible hack to hide the plone.contentviews div*/
 .section-surveys #edit-bar {
   display: none;
+}
+
+/* Add these two hacks to the repo!!!! 2010-12-21 13:41 Kurt Bendl */
+.template-submission-status #page {
+  overflow: visible;
+}
+.template-submission-status #footer-wrapper,
+.template-submission-status #footer-links-wrapper {
+    background-color: transparent;
+    visibility: collapse;
+}
+
+.template-submission-status #header {
+    height: 0;
+    position: relative;
+    visibility: collapse;
 }
 
 
